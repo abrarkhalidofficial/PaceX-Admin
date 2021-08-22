@@ -84,7 +84,7 @@ class ExploreScreen extends Component {
     const navigation = this.props.navigation;
     return (
       <ImageBackground
-        source={require('../Assets/discover__bg.png')}
+        source={require('../Assets/explore_bg.png')}
         style={{
           paddingHorizontal: SCREEN_PADDING_HORIZONTAL,
           paddingTop: SCREEN_PADDING_TOP,
