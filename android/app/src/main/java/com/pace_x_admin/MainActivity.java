@@ -2,8 +2,15 @@ package com.pace_x_admin;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
+// react-native-splash-screen >= 0.3.1
+import org.devio.rn.splashscreen.SplashScreen; // here
 
 public class MainActivity extends ReactActivity {
+  @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen.show(this);  // here
+        super.onCreate(null);
+    }
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
@@ -13,8 +20,5 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "pace_x_admin";
   }
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
-  }
+ 
 }
