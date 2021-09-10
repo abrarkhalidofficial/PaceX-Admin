@@ -1,9 +1,9 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '11.0'
+platform :ios, '10.0'
 
-target 'pace_x_admin' do
+target 'warehouse' do
   config = use_native_modules!
 
   use_react_native!(
@@ -12,7 +12,7 @@ target 'pace_x_admin' do
     :hermes_enabled => false
   )
 
-  target 'pace_x_adminTests' do
+  target 'warehouseTests' do
     inherit! :complete
     # Pods for testing
   end
